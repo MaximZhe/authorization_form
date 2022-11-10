@@ -48,6 +48,8 @@ elem.addEventListener("input", () => {
 	}
 	if(elem.value === "+" || elem.value === "7"){
 		maskPhone(elem, maskeds[1])
+		const reg = String.raw`[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}`
+		elem.setAttribute("pattern",`${reg}`)
 	}
 	if(elem.value === res ){
 		console.log(false)
@@ -90,7 +92,8 @@ function userForm (f) {
 		.then(result => console.log(result))
         .finally(() => {
             elem.classList.remove("valid")
-			elem.value = ""
+			elem.value = "";
+			elem.setAttribute("pattern",``)
         });
 		
     });
