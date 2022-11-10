@@ -1,0 +1,220 @@
+* {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
+		font-weight: 400;
+		color: #333333;
+}
+
+html {
+		scroll-behavior: smooth;
+}
+
+body {
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+}
+
+nav, footer, header {
+		display: block;
+}
+
+button {
+		cursor: pointer;
+}
+
+a {
+		text-decoration: none;
+}
+
+ul, li, ol {
+		list-style: none;
+}
+
+input {
+		outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		padding: 0;
+		font-weight: 700;
+}
+
+p {
+		margin: 0;
+		padding: 0;
+}
+
+img {
+		width: 100%;
+}
+
+.container {
+		width: 100%;
+		padding: 0 16px;
+		margin: 0 auto;
+}
+
+.form-box {
+		padding: 50px 0;
+}
+.form-box__title {
+		font-size: 45px;
+		line-height: 1;
+		color: #000000;
+		text-align: center;
+}
+.form-box__wrapper {
+		max-width: 400px;
+		margin: 55px auto 0;
+		background: #F5F5F7;
+		border-radius: 20px;
+		padding: 20px 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+}
+
+.form {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+}
+.form label {
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 600;
+}
+.form input {
+		background: #FFFFFF;
+		border: 1px solid #E1E1E1;
+		border-radius: 4px;
+		padding: 16px 0 16px 16px;
+		color: #1D1D1F;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 400;
+		margin-top: 10px;
+}
+.form input::-webkit-input-placeholder {
+		color: #1D1D1F;
+		font-size: 16px;
+		line-height: 24px;
+		opacity: 0.7;
+		font-weight: 400;
+}
+.form input::-moz-placeholder {
+		color: #1D1D1F;
+		font-size: 16px;
+		line-height: 24px;
+		opacity: 0.7;
+		font-weight: 400;
+}
+.form input:-ms-input-placeholder {
+		color: #1D1D1F;
+		font-size: 16px;
+		line-height: 24px;
+		opacity: 0.7;
+		font-weight: 400;
+}
+.form input::-ms-input-placeholder {
+		color: #1D1D1F;
+		font-size: 16px;
+		line-height: 24px;
+		opacity: 0.7;
+		font-weight: 400;
+}
+.form input::placeholder {
+		color: #1D1D1F;
+		font-size: 16px;
+		line-height: 24px;
+		opacity: 0.7;
+		font-weight: 400;
+}
+.form input:focus {
+		caret-color: #0066CC;
+		border: 1px solid #0066CC;
+}
+.form input:focus::-webkit-input-placeholder {
+		color: transparent;
+}
+.form input:focus::-moz-placeholder {
+		color: transparent;
+}
+.form input:focus:-ms-input-placeholder {
+		color: transparent;
+}
+.form input:focus::-ms-input-placeholder {
+		color: transparent;
+}
+.form input:focus::placeholder {
+		color: transparent;
+}
+.form input.invalid {
+		border-color: #dc3545;
+		padding-right: 2.25rem;
+		background-image: url("../img/red-error.svg");
+		background-repeat: no-repeat;
+		background-position: right 0.5625rem center;
+		background-size: 1.125rem 1.125rem;
+}
+.form input.valid {
+		border-color: #198754;
+		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+		padding-right: 2.25rem;
+		background-repeat: no-repeat;
+		background-position: right 0.5625rem center;
+		background-size: 1.125rem 1.125rem;
+}
+.form input.invalid:focus {
+		border-color: #dc3545;
+}
+.form input.valid:focus {
+		border-color: #198754;
+}
+.form input.nofocus {
+		border-color: #E1E1E1;
+		background-image: none;
+		padding-right: 2.25rem;
+		background-repeat: no-repeat;
+		background-position: right 0.5625rem center;
+		background-size: 1.125rem 1.125rem;
+}
+.form input.nofocus:focus {
+		caret-color: #0066CC;
+		border-color: #0066CC;
+		padding-right: 2.25rem;
+		background-repeat: no-repeat;
+		background-position: right 0.5625rem center;
+		background-size: 1.125rem 1.125rem;
+}
+.form .form__button {
+		margin-top: 30px;
+		background: #0066CC;
+		border-radius: 4px;
+}
+
+.btn {
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 600;
+		color: #FFFFFF;
+		padding: 16px 28px;
+		text-align: center;
+		max-width: 192px;
+}
