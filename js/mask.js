@@ -40,13 +40,13 @@ function maskPhone(selector, masked) {
 let newValue = 0;
 res = /[0-6,9]/g;
 elem.addEventListener("input", () => {
-	if(elem.value[0] === "8"){
+	if(elem.value === "8"){
 		maskPhone(elem,maskeds[0])
 		const regs = String.raw`\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}`
 		elem.setAttribute("pattern",`${regs}`)
 		
 	}
-	if(elem.value[0] === "+" || elem.value[0] === "7"){
+	if(elem.value === "+" || elem.value === "7"){
 		maskPhone(elem, maskeds[1])
 		const reg = String.raw`[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}`
 		elem.setAttribute("pattern",`${reg}`)
